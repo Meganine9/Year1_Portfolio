@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #ddd;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .resume-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid black;
+        }
+
+        .resume-section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            color: black;
+        }
+
+        .section-title i {
+            color: black;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item h3, .education-item h3 {
+            color: #444;
+        }
+
+        .experience-item p, .education-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .skill-category h3 {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.3rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media print {
+            header, footer {
+                display: none;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nicholas Helman</div>
+            <ul class="nav-links">
+                   <li><a href="../index.html" target="_blank">Home</a></li>
+                <li><a href="../pages/projects.html" target="_blank">Projects</a></li>
+                <li><a href="../pages/resume.html" target="_blank">Resume</a></li>
+                <li><a href="../pages/contact.html" target ="_blank">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="resume-container">
+            <div class="resume-header">
+                <h1>Nicholas Helman</h1>
+                <p>Coding Student</p>
+                <p>Surprise AZ | (602)-554-7444 | nicholas.helman08@gmail.com</p>
+            </div>
+
+            <div class="resume-section">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Experience</h3>
+                <div class="experience-item">
+                    <h3>Freelance Web Developer</h3>
+                    
+                    <ul>
+                        <li>Adopt a Street, Dysart High School </li>
+                        <li>Open House, West-MEC Central campus</li>
+                        <li>Food Bank, Packing food for distribution</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </h2>
+                <div class="education-item">
+                    <p>AUGUST 2024 - PRESENT
+                        Coding Program, West-MEC Central campus, Glendale, AZ 
+                        900-hour college-level career & technical education program
+                    </p>
+                    <p>
+                        AUGUST 2022- PRESENT
+                        Willow Canyon High School, Surprise, Arizona
+                    </p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    Technical Skills
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li>JavaScript</li>
+                           <li>CSS</li>
+                           <li>HTML</li>
+                        </ul>
+                    </div>
+                   
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2026 Nicholas Helman. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
